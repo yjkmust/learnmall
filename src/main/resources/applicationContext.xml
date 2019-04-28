@@ -13,6 +13,11 @@
 
     <!--<context:annotation-config/>-->
     <aop:aspectj-autoproxy/>
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    </bean>
+
+    <import resource="applicationContext-datasource.xml"/>
 
 
 
